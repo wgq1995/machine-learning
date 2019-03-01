@@ -10,6 +10,8 @@
 * entities每条记录类似于：{'name': 'someone', 'type': 'PERSON', 'metadata': {}, 'salience': 0.36503658, 'mentions': [{'text': {'content': 'someone', 'beginOffset': -1}, 'type': 'COMMON'}, {'text': {'content': 'someone', 'beginOffset': -1}, 'type': 'COMMON'}]}
 ## metadata
 * metadata only mean
+## metadata notes
+* {'faceAnnotations', 'labelAnnotations', 'textAnnotations', 'imagePropertiesAnnotation', 'cropHintsAnnotation'}5种
 # drop 
     NMF_labelAnnotations_description_2
     PhotoAmt
