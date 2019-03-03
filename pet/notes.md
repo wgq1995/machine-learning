@@ -5,9 +5,11 @@
 * entities.mentions.type未区分
 ## sentiment notes
 * categories, tokens都为空
-* documentSentiment里只有２个元素，如{'magnitude': 3.1, 'score': 0.3}
-* sentences每条记录类似于：{'text': {'content': 'Hi.', 'beginOffset': -1}, 'sentiment': {'magnitude': 0.2, 'score': 0.2}}
+* documentSentiment里只有２个元素，如{'magnitude': 3.1, 'score': 0.3}，这个magnitude是整体的得分，尝试除以句子个数进行归一化
+* sentences每条记录类似于：{'text': {'content': 'Hi.', 'beginOffset': -1}, 'sentiment': {'magnitude': 0.2, 'score': 0.2}}，考虑取前几个单独考虑
+* magnitude和score联合考虑
 * entities每条记录类似于：{'name': 'someone', 'type': 'PERSON', 'metadata': {}, 'salience': 0.36503658, 'mentions': [{'text': {'content': 'someone', 'beginOffset': -1}, 'type': 'COMMON'}, {'text': {'content': 'someone', 'beginOffset': -1}, 'type': 'COMMON'}]}
+
 ## metadata
 * metadata only mean
 ## metadata notes
